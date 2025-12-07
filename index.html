@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ヒート カードカウンター</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ヒート カードカウンター</h1>
+
+        <div class="total-display">
+            残りデッキ: <span id="total-count">18</span>枚
+        </div>
+
+        <div class="card-list">
+            <div class="card-row" data-card="1">
+                <span class="card-name">1</span>
+                <span class="card-count"><span class="remaining">3</span>/3</span>
+                <span class="card-prob"><span class="prob-value">0</span>%</span>
+                <div class="buttons">
+                    <button class="btn btn-minus">-</button>
+                    <button class="btn btn-plus">+</button>
+                </div>
+            </div>
+
+            <div class="card-row" data-card="2">
+                <span class="card-name">2</span>
+                <span class="card-count"><span class="remaining">3</span>/3</span>
+                <span class="card-prob"><span class="prob-value">0</span>%</span>
+                <div class="buttons">
+                    <button class="btn btn-minus">-</button>
+                    <button class="btn btn-plus">+</button>
+                </div>
+            </div>
+
+            <div class="card-row" data-card="3">
+                <span class="card-name">3</span>
+                <span class="card-count"><span class="remaining">3</span>/3</span>
+                <span class="card-prob"><span class="prob-value">0</span>%</span>
+                <div class="buttons">
+                    <button class="btn btn-minus">-</button>
+                    <button class="btn btn-plus">+</button>
+                </div>
+            </div>
+
+            <div class="card-row" data-card="4">
+                <span class="card-name">4</span>
+                <span class="card-count"><span class="remaining">3</span>/3</span>
+                <span class="card-prob"><span class="prob-value">0</span>%</span>
+                <div class="buttons">
+                    <button class="btn btn-minus">-</button>
+                    <button class="btn btn-plus">+</button>
+                </div>
+            </div>
+
+            <div class="card-row" data-card="stress">
+                <span class="card-name">+</span>
+                <span class="card-count"><span class="remaining">3</span>/3</span>
+                <span class="card-prob"><span class="prob-value">0</span>%</span>
+                <div class="buttons">
+                    <button class="btn btn-minus">-</button>
+                    <button class="btn btn-plus">+</button>
+                </div>
+            </div>
+
+            <div class="card-row draft" data-card="d1">
+                <input type="text" class="card-name-input" data-name="d1" placeholder="D1" maxlength="15">
+                <span class="card-count"><span class="remaining">1</span>/1</span>
+                <span class="card-prob"><span class="prob-value">0</span>%</span>
+                <div class="buttons">
+                    <button class="btn btn-minus">-</button>
+                    <button class="btn btn-plus">+</button>
+                </div>
+            </div>
+
+            <div class="card-row draft" data-card="d2">
+                <input type="text" class="card-name-input" data-name="d2" placeholder="D2" maxlength="15">
+                <span class="card-count"><span class="remaining">1</span>/1</span>
+                <span class="card-prob"><span class="prob-value">0</span>%</span>
+                <div class="buttons">
+                    <button class="btn btn-minus">-</button>
+                    <button class="btn btn-plus">+</button>
+                </div>
+            </div>
+
+            <div class="card-row draft" data-card="d3">
+                <input type="text" class="card-name-input" data-name="d3" placeholder="D3" maxlength="15">
+                <span class="card-count"><span class="remaining">1</span>/1</span>
+                <span class="card-prob"><span class="prob-value">0</span>%</span>
+                <div class="buttons">
+                    <button class="btn btn-minus">-</button>
+                    <button class="btn btn-plus">+</button>
+                </div>
+            </div>
+
+            <div class="card-row heat" data-card="heat">
+                <span class="card-name">🔥</span>
+                <span class="card-count"><span class="remaining">0</span>枚</span>
+                <span class="card-prob"><span class="prob-value">0</span>%</span>
+                <div class="buttons">
+                    <button class="btn btn-minus">-</button>
+                    <button class="btn btn-plus">+</button>
+                </div>
+            </div>
+        </div>
+
+        <button id="reset-btn" class="reset-btn">リセット</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
