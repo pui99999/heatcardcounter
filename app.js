@@ -103,7 +103,8 @@ function updateDisplay() {
             minusBtn.disabled = false;
         }
 
-        plusBtn.disabled = remaining >= max;
+        // stressカードは上限なし、それ以外は初期値が上限
+        plusBtn.disabled = card !== 'stress' && remaining >= max;
     }
 
     // ヒートカードの確率も更新
