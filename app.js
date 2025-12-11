@@ -126,7 +126,8 @@ function decrementCard(card) {
 
 function incrementCard(card) {
     const max = INITIAL_DECK[card];
-    if (deck[card] < max) {
+    // stressカードは上限なし、それ以外は初期値が上限
+    if (card === 'stress' || deck[card] < max) {
         deck[card]++;
         saveDeck();
         updateDisplay();
